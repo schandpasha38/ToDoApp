@@ -1,0 +1,84 @@
+body {
+    background: #FF416C;
+    background: -webkit-linear-gradient(to top, #FF4B2B, #FF416C);
+    background: linear-gradient(to top, #FF4B2B, #FF416C);
+    height: 100vh;
+    font-family: 'Archivo', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #2980b9;
+    font-size: 25px;
+    font-weight: 400;
+    padding: 10px;
+    margin: 0;
+}
+
+#addTodoIcon {
+    float: right;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    background-color: #fff;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    color: #666;
+}
+
+li:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.deletIcon {
+    background-color: #e74c3c;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+
+li:hover .deletIcon {
+    width: 40px;
+    opacity: 1.0;
+}
+
+input {
+    height: 40px;
+    font-size: 18px;
+    background-color: #f7f7f7;
+    border: none;
+    width: 100%;
+    color: #2980b9;
+    text-align: left;
+    display: none;
+}
+
+input:focus {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(67, 158, 184);
+    outline: none;
+}
+
+#container {
+    max-width: 360px;
+    margin: 100px auto;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: grey;
+}
